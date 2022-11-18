@@ -377,15 +377,21 @@
             placeholder="Введіть текст">
           </textarea>
           
-          <fieldset class="sizes">
-            <legend>Sizes</legend>
-            <label for="raadio-s">S</label>
-            <input id="checkbox-s" value="s" name="size" type="checkbox" checked />
-            <label for="raadio-m">M</label>
-            <input id="checkbox-m" value="m" name="size" type="checkbox" />
-            <label for="raadio-l">L</label>
-            <input id="checkbox-l" value="l" name="size" type="checkbox" />
-          </fieldset>
+          <div class="check-line">
+            <label for="checkbox-agree" class="checkbox-agree modal-label">
+            <input id="checkbox-agree" 
+              value="agree" 
+              name="checkbox-agree" 
+              type="checkbox" 
+              class="visually-hidden checkbox-agree" />            
+              <span class="icon-check">
+                <svg class="agree-icon" width="14" height="11">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю <a class="agree-rules" href="#">Умови договору</a>
+            </label>
+          </div>
           <button type="submit" class="order-button">Відправити</button>
         </form>
       </div>
